@@ -1,19 +1,25 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+/* universal */
 /* Sticky footer styles */
 html {
     position: relative;
     min-height: 100%;
 }
 
-/* universal */
 body {
     font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
     font-size: 14px;
