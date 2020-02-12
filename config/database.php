@@ -17,7 +17,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => $db_config['connection'],
 
     /*
     |--------------------------------------------------------------------------
@@ -67,11 +67,11 @@ return [
 
         'pgsql' => [
             'driver'   => 'pgsql',
-            'host'     => 'ec2-34-200-116-132.compute-1.amazonaws.com',
-            'port'     => '5432',
-            'database' => 'ddj231muvfp47',
-            'username' => 'lzueshdqvhygdt',
-            'password' => '979806d628fabe9966f1688d2b9ca472de0b4299361df0d5f103467ca97e4d6b',
+            'host'     => $db_config['host'],
+            'port'     => env('DB_PORT', '5432'),
+            'database' => $db_config['database'],
+            'username' => $db_config['username'],
+            'password' => $db_config['password'],
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
