@@ -26,9 +26,6 @@ body {
 }
 
 /* header */
-.card-box{
-    margin-bottom: 60px;
-}
 
 .navbar-static-top {
     border-color: #e7e7e7;
@@ -38,10 +35,6 @@ body {
     border-bottom: 1px solid #e8e8e8;
     margin-bottom: 30px;
     margin-top: 0px;
-}
-
-.page-bottom{
-    margin-bottom: 60px;
 }
 
 .footer {
@@ -70,9 +63,50 @@ body {
 /* User register page */
 .register-page {
     img.captcha {
-      cursor: pointer;
-      border: 1px solid #ced4da;
-      border-radius: 4px;
-      padding: 3px;
+        cursor: pointer;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        padding: 3px;
     }
+}
+
+/* Topic Index Page */
+.topics-index-page {
+    .topic-list {
+        .nav>li>a {
+            position: relative;
+            display: block;
+            padding: 5px 14px;
+            font-size: 0.9em;
+        }
+  
+        a {
+            color: #444444;
+        }
+  
+        .meta {
+            font-size: 0.9em;
+            color: #b3b3b3;
+  
+            a {
+                color: #b3b3b3;
+            }
+        }
+  
+        .badge {
+            background-color: #d8d8d8;
+        }
+  
+        hr {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            border: 0;
+            border-top: 1px solid #dcebf5;
+        }
+    }
+}
+
+/* Add container and footer space */
+#app > div.container {
+  margin-bottom: 100px;
 }
