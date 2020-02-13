@@ -40,12 +40,16 @@ body {
     margin-top: 0px;
 }
 
+.page-bottom{
+    margin-bottom: 60px;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 55px;
+    height: 50px;
     background-color: #000;
   
     .container {
