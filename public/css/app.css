@@ -16924,3 +16924,7 @@ body {
   margin-bottom: 100px;
 }
 
+.media-body .media-heading > span > small {
+  padding-left: 10px;
+}
+
