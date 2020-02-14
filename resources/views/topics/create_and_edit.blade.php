@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', '话题创建与修改')
+
 @section('styles')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/simditor.css') }}">
 @stop
