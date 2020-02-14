@@ -10,6 +10,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title', 'MuQ BBS') - MuQ BBS</title>
+    <meta name="description" content="@yield('description', 'MuQBBS 爱好者社区')" />
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
