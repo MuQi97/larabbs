@@ -52,5 +52,20 @@ class UsersTableSeeder extends Seeder
         $user->avatar = 'http://muqlaravel.com/uploads/images/avatars/202002/13/1_1581596173_NdBhmRvvci.jpg';
         $user->introduction = "I'm MuQ";
         $user->save();
+
+        $user = User::find(2);
+        $user->name = 'Five-Seven';
+        $user->email = '865276519@qq.com';
+        $user->password = '$2y$10$4fc4kczZtIBmeDZmEms7neeuHAC25fZBJSNn3oomGn551C6.TIDRG';
+        $user->remember_token = Str::random(10);
+        $user->avatar = 'http://muqlaravel.com/uploads/images/avatars/202002/13/1_1581596173_NdBhmRvvci.jpg';
+        $user->introduction = "I'm MuQ";
+        $user->save();
+
+        $user->assignRole('Founder');
+
+        // 将 2 号用户指派为『管理员』
+        $user = User::find(2);
+        $user->assignRole('Maintainer');
     }
 }
