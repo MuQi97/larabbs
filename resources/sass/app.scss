@@ -71,7 +71,7 @@ body {
 }
 
 /* Topic Index Page */
-.topics-index-page, .categories-show-page{
+.topics-index-page, .categories-show-page, .root-page{
     .topic-list {
         .nav>li>a {
             position: relative;
@@ -164,5 +164,17 @@ body {
   
     .badge-hint {
         background-color: #d15b47 !important;
+    }
+}
+
+.sidebar {
+    .card {
+        border: unset;
+        background-color: unset;
+    }
+
+    .card-body{
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        background-color: #fff;
     }
 }
