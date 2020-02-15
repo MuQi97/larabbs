@@ -15,6 +15,8 @@
                 <hr>
                 <h5><strong>注册于</strong></h5>
                 <p>{{ $user->created_at->diffForHumans() }}</p>
+                <h5><strong>最后活跃</strong></h5>
+                <p title="{{  $user->last_actived_at }}">{{ $user->last_actived_at->diffForHumans() }}</p>
             </div>
         </div>
     </div>
@@ -42,9 +44,9 @@
                     </li>
                 </ul>
                 @if (if_query('tab', 'replies'))
-                    @include('users._replies', ['replies' => $user->replies()->with('topic')->recent()->paginate(5)])
+                @include('users._replies', ['replies' => $user->replies()->with('topic')->recent()->paginate(5)])
                 @else
-                    @include('users._topics', ['topics' => $user->topics()->recent()->paginate(5)])
+                @include('users._topics', ['topics' => $user->topics()->recent()->paginate(5)])
                 @endif
             </div>
         </div>
